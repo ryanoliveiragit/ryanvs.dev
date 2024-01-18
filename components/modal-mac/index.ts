@@ -1,0 +1,1 @@
+export {ModalMac} from './modal-mac'
