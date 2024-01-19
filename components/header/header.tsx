@@ -12,8 +12,8 @@ import { ModeToggle } from "../ui/toggle-mode";
 
 export const Header = () => {
   return (
-    <header className="h-[61px] flex justify-center items-center sticky top-0 z-30 mb-10 bg-gray-50 dark:bg-gray-900 transition-[background-color] bg-opacity-0 backdrop-blur-none dark:bg-opacity-0 duration-300">
-      <nav className="flex flex-row justify-between items-center w-[650px] mx-2">
+    <header className=" h-[61px] flex justify-center items-center sticky top-0 z-30 mb-10 bg-gray-50 dark:bg-gray-900 transition-[background-color] bg-opacity-0 backdrop-blur-none dark:bg-opacity-0 duration-300">
+      <nav className="flex flex-row justify-between items-center w-[650px] mx-2  py-4">
         <Link
           href="/"
           className="hover:text-secondary-foreground text-primary cursor-pointer"
