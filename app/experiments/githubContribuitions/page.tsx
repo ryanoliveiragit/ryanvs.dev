@@ -182,6 +182,20 @@ export default function GithubContributions() {
     handleSubmit({ preventDefault: () => {} } as React.FormEvent); // Cria um objeto com o método preventDefault vazio
   }, [])
 
+  const CustomTooltip = ({ active, payload, label }: any) => {
+    if (active && payload && payload.length) {
+      // Você pode personalizar o conteúdo do tooltip aqui com base nos dados do payload
+      return (
+        <div className="custom-tooltip">
+          <p className="label">{`${label} : ${payload[0].value}`}</p>
+          {/* Adicione mais conteúdo conforme necessário */}
+        </div>
+      );
+    }
+  
+    return null;
+  };
+  
   console.log("Total de Commits:", totalContributions2024);
 
   console.log("total de commits", contributionsByMonth2023);
@@ -277,7 +291,7 @@ export default function GithubContributions() {
               />
               <YAxis yAxisId="left" orientation="left" stroke="#8884d8" />
               <YAxis yAxisId="right" orientation="right" stroke="#82ca9d" />
-              <Tooltip />
+              <Tooltip  />
 
               <Bar
                 yAxisId="left"

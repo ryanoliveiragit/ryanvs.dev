@@ -1,61 +1,85 @@
-import React from "react";
-import {
-  Github,
-  Home,
-  FlaskConical,
-  ShoppingBag,
-  Pencil,
-  Instagram,
-} from "lucide-react";
+"use client";
+import React, { useEffect, useState } from "react";
+import { BiHomeAlt2 } from "react-icons/bi";
+import { IoFlask } from "react-icons/io5";
+import { GoPencil } from "react-icons/go";
+import { RiShoppingBag3Line } from "react-icons/ri";
+import { BiLogoInstagramAlt } from "react-icons/bi";
+import { FaGithub } from "react-icons/fa6";
 import Link from "next/link";
 import { ModeToggle } from "../ui/toggle-mode";
 
 export const Header = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 0;
+      setScrolled(isScrolled);
+    };
+
+    // Adiciona um ouvinte de evento de rolagem quando o componente é montado
+    window.addEventListener("scroll", handleScroll);
+
+    // Remove o ouvinte de evento quando o componente é desmontado
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className=" h-[61px] flex justify-center items-center sticky top-0 z-30 mb-10 bg-gray-50 dark:bg-gray-900 transition-[background-color] bg-opacity-0 backdrop-blur-none dark:bg-opacity-0 duration-300">
-      <nav className="flex flex-row justify-between items-center w-[650px] mx-2  py-4">
+    <header
+      className={`h-[61px] flex justify-center items-center sticky top-0 z-30 mb-10 bg-gray-50 ${
+        scrolled ? "dark:bg-opacity-30" : "dark:bg-opacity-0"
+      } dark:bg-[#111111] transition-[background-color] bg-opacity-0 ${
+        scrolled ? "backdrop-blur-sm" : "backdrop-blur-none"
+      }  dark:bg-opacity-0 duration-300"`}
+    >
+      <nav
+        className={`flex flex-row mt-2 justify-between items-center w-[650px] mx-2 py-4`}
+      >
         <Link
           href="/"
-          className="hover:text-secondary-foreground text-primary cursor-pointer"
+          className="dark:text-[#c7c7c7] hover:dark:text-[#fffefe] text-primary cursor-pointer "
         >
-          <Home size={18} />
+          <BiHomeAlt2 size={20} strokeWidth={0.3} />
         </Link>
         <ul className="flex flex-row items-center p-0 list-none gap-4 text-primary">
           <Link
             href="/experiments"
-            className="hover:text-secondary-foreground cursor-pointer"
+            className="dark:text-[#c7c7c7] hover:dark:text-[#fffefe] text-primary cursor-pointer "
           >
-            <FlaskConical size={18} />
+            <IoFlask size={20} strokeWidth={0.3} />
           </Link>
 
           <Link
             href="/jornal"
-            className="hover:text-secondary-foreground cursor-pointer"
+            className="dark:text-[#c7c7c7] hover:dark:text-[#fffefe] text-primary cursor-pointer "
           >
-            <Pencil size={18} />
+            <GoPencil size={20} strokeWidth={0.3} />
           </Link>
 
           <Link
             href="/jornal"
-            className="hover:text-secondary-foreground cursor-pointer"
+            className="dark:text-[#c7c7c7] hover:dark:text-[#fffefe] text-primary cursor-pointer "
           >
-            <ShoppingBag size={18} />
+            <RiShoppingBag3Line size={20} strokeWidth={0.3} />
           </Link>
-          <hr className="h-[1rem] w-[1px] bg-muted-foreground" />
+          <hr className="h-[1.5rem] w-[2px] bg-muted-foreground opacity-30" />
           <Link
             href="/jornal"
-            className="hover:text-secondary-foreground cursor-pointer"
+            className="dark:text-[#c7c7c7] hover:dark:text-[#fffefe] text-primary cursor-pointer "
           >
-            <Instagram size={18} />
+            <BiLogoInstagramAlt size={20} strokeWidth={0.3} />
           </Link>
 
           <Link
             href="/jornal"
-            className="hover:text-secondary-foreground cursor-pointer"
+            className="dark:text-[#c7c7c7] hover:dark:text-[#fffefe] text-primary cursor-pointer "
           >
-            <Github size={18} />
+            <FaGithub size={20} strokeWidth={0.3} />
           </Link>
-          <hr className="h-[1rem] w-[1px] bg-muted-foreground" />
+          <hr className="h-[1.5rem] w-[2px] bg-muted-foreground opacity-30" />
           <li>
             <ModeToggle />
           </li>
