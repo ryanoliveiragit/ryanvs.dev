@@ -48,11 +48,11 @@ export default function Home() {
             Instituto JogaJunto
           </a>
           , anteriormente na{" "}
-          <h4
+          <span
             className="dark:text-[#f88f8f] inline-block cursor-ne-resize font-normal bg-clip-text text-transparent transition-transform ease-in-out hover:scale-105"
           >
             R3 Transportes.
-          </h4>
+          </span>
         </p>
       </div>
     </section>
