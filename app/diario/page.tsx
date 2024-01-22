@@ -7,10 +7,10 @@ export default function Diario() {
       id="diario"
     >
       <h1 className="text-secondary-foreground text-3xl font-semibold mb-2">
-      Explorando em 2024
+        Explorando em 2024
       </h1>
       <h2 className="text-muted-foreground">
-      Minha trilha de aprendizado neste ano.
+        Minha trilha de aprendizado neste ano.
       </h2>
       <div className="scale-x-100">
         <hr className="w-[5rem] m-[3rem]" />
@@ -25,7 +25,7 @@ export default function Diario() {
           href="/diario/uistart"
         >
           <aside className="absolute [writing-mode:vertical-rl] h-full top-0 -left-12 md:-left-16 pr-11 text-center text-sm  dark:dark:text-[#737373] font-['Luxurious_Roman']">
-          January 09th
+            January 09th
           </aside>
           <h2 className="text-xl font-semibold ">UI Start</h2>
           <p className="mt-2 text-sm text-gray-500 dark:text-[#737373]">
@@ -35,10 +35,10 @@ export default function Diario() {
 
         <a
           className="flex flex-col px-4 py-6 relative rounded-xl transition-colors duration-300 bg-[#ebebeb00] dark:dark:bg-[#1f1f1f00] hover:dark:bg-[#1f1f1f] hover:bg-[#ebebeb]"
-          href="/journal/dns-ad-blocker-with-pi-hole-and-docker"
+          href="/diario/rocketseat-ignite" 
         >
           <aside className="absolute [writing-mode:vertical-rl] h-full top-0 -left-12 md:-left-16 pr-11 text-center text-sm  dark:dark:text-[#737373] font-['Luxurious_Roman']">
-          May 02th
+            May 02th
           </aside>
           <h2 className="text-xl font-semibold ">Rocketseat Ignite</h2>
           <p className="mt-2 text-sm text-gray-500 dark:text-[#737373]">
@@ -49,10 +49,10 @@ export default function Diario() {
 
         <a
           className="flex flex-col px-4 py-6 relative rounded-xl transition-colors duration-300 bg-[#ebebeb00] dark:dark:bg-[#1f1f1f00] hover:dark:bg-[#1f1f1f] hover:bg-[#ebebeb]"
-          href="/journal/dns-ad-blocker-with-pi-hole-and-docker"
+          href="/diario/rocketseat-ignite" 
         >
           <aside className="absolute [writing-mode:vertical-rl] h-[200px] -top-6 -left-12 md:-left-16 pr-11 text-center text-sm  dark:dark:text-[#737373] font-['Luxurious_Roman']">
-          November 02th
+            November 02th
           </aside>
           <h2 className="text-xl font-semibold ">Quality Assurance</h2>
           <p className="mt-2 text-sm text-gray-500 dark:text-[#737373]">
@@ -60,10 +60,9 @@ export default function Diario() {
             condições, respeitando as qualidades pretendidas pelo consumidor.
           </p>
         </a>
-    
+
         <Footer />
       </div>
-
     </div>
   );
 }
