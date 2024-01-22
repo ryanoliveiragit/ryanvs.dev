@@ -53,7 +53,7 @@ export const Header = () => {
           </Link>
 
           <Link
-            href="/jornal"
+            href="/diario"
             className="dark:text-[#c7c7c7] hover:dark:text-[#fffefe] text-primary cursor-pointer "
           >
             <GoPencil size={20} strokeWidth={0.3} />
