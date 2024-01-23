@@ -35,7 +35,7 @@ export default function Diario() {
 
         <a
           className="flex flex-col px-4 py-6 relative rounded-xl transition-colors duration-300 bg-[#ebebeb00] dark:dark:bg-[#1f1f1f00] hover:dark:bg-[#1f1f1f] hover:bg-[#ebebeb]"
-          href="/diario/rocketseat-ignite" 
+          href="/diario/rocketseat-ignite"
         >
           <aside className="absolute [writing-mode:vertical-rl] h-full top-0 -left-12 md:-left-16 pr-11 text-center text-sm  dark:dark:text-[#737373] font-['Luxurious_Roman']">
             May 02th
@@ -44,20 +44,6 @@ export default function Diario() {
           <p className="mt-2 text-sm text-gray-500 dark:text-[#737373]">
             O Ignite é um programa de aceleração com foco na sua especialização,
             para quem já domina programação
-          </p>
-        </a>
-
-        <a
-          className="flex flex-col px-4 py-6 relative rounded-xl transition-colors duration-300 bg-[#ebebeb00] dark:dark:bg-[#1f1f1f00] hover:dark:bg-[#1f1f1f] hover:bg-[#ebebeb]"
-          href="/diario/rocketseat-ignite" 
-        >
-          <aside className="absolute [writing-mode:vertical-rl] h-[200px] -top-6 -left-12 md:-left-16 pr-11 text-center text-sm  dark:dark:text-[#737373] font-['Luxurious_Roman']">
-            November 02th
-          </aside>
-          <h2 className="text-xl font-semibold ">Quality Assurance</h2>
-          <p className="mt-2 text-sm text-gray-500 dark:text-[#737373]">
-            Garantir que o produto do cliente seja entregue em perfeitas
-            condições, respeitando as qualidades pretendidas pelo consumidor.
           </p>
         </a>
 

@@ -50,7 +50,7 @@ export default function UiStart() {
             <div className="flex flex-col gap-3 mt-4">
               <h2 className="text-xl font-semibold ">Dashboard</h2>
               <h3 className="text-md font-semibold ">
-              ⚡️ Monitoramento em Tempo Real com Consumo de APIs
+                ⚡️ Monitoramento em Tempo Real com Consumo de APIs
               </h3>
               <p className="dark:text-[#b8b8b8] text-sm">
                 Este painel proporciona uma visão holística, capacitando os

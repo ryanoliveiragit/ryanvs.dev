@@ -9,6 +9,7 @@ type ProjectMockupType = {
     introduction?: string;
     image: string;
     altImage: string;
+    href: string
 };
 
 export const ProjectMockup = ({
@@ -17,6 +18,7 @@ export const ProjectMockup = ({
     image,
     introduction,
     altImage,
+    href
 }: ProjectMockupType) => {
     return (
         <>
@@ -28,7 +30,7 @@ export const ProjectMockup = ({
 
             <div className="w-full h-full flex flex-col gap-2 items-start">
                 <Image alt={altImage} height={400} width={900} src={`${image}`} />
-                <HoverCardDemo name={title} image={`${image}`} />
+                <HoverCardDemo name={title} image={`${image}`} href={href}/>
             </div>
             <hr className="" />
         </>
