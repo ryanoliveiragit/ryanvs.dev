@@ -24,7 +24,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <GoogleAnalytics gaId={GAID} />
+      <GoogleAnalytics gaId="G-M7QWT8CMKQ" />
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
