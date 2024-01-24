@@ -4,7 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/header";
 import { Layout } from "@/components/layout";
 import { ThemeProvider } from "@/components/theme-provider";
-import Script from "next/script";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,10 +23,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <Script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-M7QWT8CMKQ"
-      />
+      <GoogleAnalytics gaId="G-M7QWT8CMKQ" />
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
