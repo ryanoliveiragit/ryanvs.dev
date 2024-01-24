@@ -28,7 +28,7 @@ const invoices = [
   },
 ];
 
-export function TableDemo() {
+export const TableDemo = () => {
   return (
     <Table>
       <TableHeader>

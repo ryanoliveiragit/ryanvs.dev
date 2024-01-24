@@ -7,6 +7,7 @@ import { RiShoppingBag3Line } from "react-icons/ri";
 import { BiLogoInstagramAlt } from "react-icons/bi";
 import { FaGithub } from "react-icons/fa6";
 import Link from "next/link";
+import { IoLogoInstagram } from "react-icons/io5";
 import { ModeToggle } from "../ui/toggle-mode";
 
 export const Header = () => {
@@ -42,42 +43,44 @@ export const Header = () => {
           href="/"
           className="dark:text-[#c7c7c7] hover:dark:text-[#fffefe] text-primary cursor-pointer "
         >
-          <BiHomeAlt2 size={20} strokeWidth={0.3} />
+          <BiHomeAlt2 size={20} />
         </Link>
         <ul className="flex flex-row items-center p-0 list-none gap-4 text-primary">
           <Link
             href="/experiments"
             className="dark:text-[#c7c7c7] hover:dark:text-[#fffefe] text-primary cursor-pointer "
           >
-            <IoFlask size={20} strokeWidth={0.3} />
+            <IoFlask size={20} />
           </Link>
 
           <Link
             href="/diario"
             className="dark:text-[#c7c7c7] hover:dark:text-[#fffefe] text-primary cursor-pointer "
           >
-            <GoPencil size={20} strokeWidth={0.3} />
+            <GoPencil size={20} />
           </Link>
 
           <Link
             href="/projects"
             className="dark:text-[#c7c7c7] hover:dark:text-[#fffefe] text-primary cursor-pointer "
           >
-            <RiShoppingBag3Line size={20} strokeWidth={0.3} />
+            <RiShoppingBag3Line size={20} />
           </Link>
           <hr className="h-[1.5rem] w-[2px] bg-muted-foreground opacity-30" />
           <Link
-            href="/"
+            href="https://www.instagram.com/ryanvs.dev/"
+            target="_blank"
             className="dark:text-[#c7c7c7] hover:dark:text-[#fffefe] text-primary cursor-pointer "
           >
-            <BiLogoInstagramAlt size={20} strokeWidth={0.3} />
+            <IoLogoInstagram size={20} />
           </Link>
 
           <Link
-            href="/jornal"
+            href="https://github.com/ryanoliveiragit"
+            target="_blank"
             className="dark:text-[#c7c7c7] hover:dark:text-[#fffefe] text-primary cursor-pointer "
           >
-            <FaGithub size={20} strokeWidth={0.3} />
+            <FaGithub size={20} />
           </Link>
           <hr className="h-[1.5rem] w-[2px] bg-muted-foreground opacity-30" />
           <li>

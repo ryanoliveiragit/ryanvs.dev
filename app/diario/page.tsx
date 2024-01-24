@@ -1,20 +1,30 @@
+'use client'
+import { BlockTitle } from "@/components/blockTitle";
 import { Footer } from "@/components/footer/footer";
+import AOS from "aos";
+import { useEffect } from "react";
 
 export default function Diario() {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      duration: 300,
+    });
+
+    return () => {
+      AOS.refresh(); 
+    };
+  }, []);
   return (
     <div
       className="relative w-screen  flex justify-start items-center flex-col max-w-[640px] "
       id="diario"
+      data-aos="zoom-in"
     >
-      <h1 className="text-secondary-foreground text-3xl font-semibold mb-2">
-        Explorando em 2024
-      </h1>
-      <h2 className="text-muted-foreground">
-        Minha trilha de aprendizado neste ano.
-      </h2>
-      <div className="scale-x-100">
-        <hr className="w-[5rem] m-[3rem]" />
-      </div>
+      <BlockTitle
+        title="Explorando em 2024"
+        description="Minha trilha de aprendizado neste ano."
+      />
 
       <div className="absolute -top-24 -left-8 h-[99vh] border-l-2 border-dotted border-divider "></div>
 

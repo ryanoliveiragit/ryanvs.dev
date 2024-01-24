@@ -17,6 +17,7 @@ import {
 } from "recharts";
 import { Footer } from "@/components/footer/footer";
 import axios from "axios";
+import { BlockTitle } from "@/components/blockTitle";
 
 interface Contribution {
   date: string;
@@ -27,7 +28,6 @@ type ResponseType = {
   login: string;
   name: string;
   public_repos: number;
-  // Adicione mais campos conforme necessário
 };
 interface ContributionsByMonth {
   [month: string]: number;
@@ -41,7 +41,7 @@ interface ContributionsData {
   contributionsByYear: { [year: string]: number };
 }
 
-//SE VOCE ESTA VENDO ISSO, SAIBA QUE EU SEI QUE TA UMA BOSTA!!!! EU PENSEI EM ARRUMAR DPS MAS CERTEZA QUE NAO VOU
+//SE VOCE ESTA VENDO ISSO, SAIBA QUE EU SEI QUE TA RUIM!!!! EU PENSEI EM ARRUMAR DPS MAS CERTEZA QUE NAO VOU
 export default function GithubContributions() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [user, setUser] = useState<ResponseType | null>(null);
@@ -67,7 +67,6 @@ export default function GithubContributions() {
         const userData = userResponse.data;
         const contributionsData = contributionsResponse.data.contributions;
 
-        // Adicione as contribuições à sua constante contributionData
         setContributionData(
           contributionsData.map((contribution: any) => ({
             date: contribution.date,
@@ -91,7 +90,6 @@ export default function GithubContributions() {
     }
   };
 
-  // Acessando valores usando notação de colchetes
   if (Array.isArray(contributionData)) {
     contributionData.map((contribution) => {
       return null;
@@ -159,16 +157,12 @@ export default function GithubContributions() {
     <div
       className="flex  flex-col justify-center items-center "
       id="githubContributions"
+      data-aos="zoom-in"
     >
-      <h1 className="text-secondary-foreground text-3xl font-semibold mb-2">
-        Github Contributions
-      </h1>
-      <h2 className="text-muted-foreground">
-        Visualize, analise e compare seus commits
-      </h2>
-      <div className="scale-x-100">
-        <hr className="w-[5rem] m-[3rem]" />
-      </div>
+      <BlockTitle
+        title="Github Contributions"
+        description="Visualize, analise e compare seus commits"
+      />
 
       <form
         onSubmit={handleSubmit}

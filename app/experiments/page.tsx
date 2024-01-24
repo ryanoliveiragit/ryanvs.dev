@@ -1,20 +1,29 @@
+"use client";
+import { BlockTitle } from "@/components/blockTitle";
 import { ModalMac } from "@/components/modal-mac";
-
+import AOS from "aos";
+import { useEffect } from "react";
+import "aos/dist/aos.css";
 export default function Jornal() {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      duration: 300,
+    });
+    return () => {
+      AOS.refresh();
+    };
+  }, []);
   return (
     <div
       className="w-screen flex justify-center items-center flex-col max-w-[640px]"
       id="home"
+      data-aos="zoom-in"
     >
-      <h1 className="text-secondary-foreground text-3xl font-semibold mb-2">
-        Experimentos
-      </h1>
-      <h2 className="text-muted-foreground">
-        Playground para experimentar novas ideias
-      </h2>
-      <div className="scale-x-100">
-        <hr className="w-[5rem] m-[3rem]" />
-      </div>
+      <BlockTitle
+        title="Experimentos"
+        description="Playground para experimentar novas ideias"
+      />
       <ModalMac />
     </div>
   );

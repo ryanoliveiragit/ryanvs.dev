@@ -27,7 +27,7 @@ export function HoverCardDemo({ image, name, href }: HoverCardType) {
           </a>
         </Button>
       </HoverCardTrigger>
-      <HoverCardContent className="bg-[#161616] p-[.8rem]">
+      <HoverCardContent className="dark:bg-[#161616] p-[.8rem]">
         <Image width={300} height={300} alt="" src={`${image}`} />
       </HoverCardContent>
     </HoverCard>

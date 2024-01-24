@@ -6,8 +6,9 @@ export default function UiStart() {
     <div
       className="relative w-screen  flex justify-start items-center flex-col max-w-[640px] "
       id="diario"
+     
     >
-      <h1 className="text-secondary-foreground text-3xl font-semibold mb-2">
+      <h1 className="text-secondary-foreground text-3xl font-semibold mb-2" >
         UI Start
       </h1>
       <h2 className="text-muted-foreground">
