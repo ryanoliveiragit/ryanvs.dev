@@ -2,8 +2,8 @@ import { Layout } from "@/components/layout";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "ryanvs | Experimentos",
-  description: "Playground para experimentar novas ideias",
+  title: "ryanvs | Github Contributions",
+  description: "Visualize, analise e compare seus commits",
 };
 
 export default function RootLayout({

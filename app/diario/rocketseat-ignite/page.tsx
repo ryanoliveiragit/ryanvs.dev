@@ -12,7 +12,7 @@ export default function RocketseatIgnite() {
         Ignite Rocketseat
       </h1>
       <h2 className="text-muted-foreground">
-        conhecer conceitos importantes de UI Design
+        conhecer conceitos importantes no frontend
       </h2>
       <div className="scale-x-100">
         <hr className="w-[5rem] m-[3rem]" />

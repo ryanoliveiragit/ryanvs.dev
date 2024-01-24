@@ -24,10 +24,10 @@ export const ModalMac = () => {
         </div>
 
         <div className="flex bg-gray-50 glass dark:bg-[#111111] h-60 p-8 xs:h-80 transition-all ease-out duration-300 ">
-          <section className="w-full p-12 flex justify-center items-center">
+          <section className="p-2 flex justify-center items-center">
             <Image
               width={900}
-              height={400}
+              height={700}
               src="https://alexandru.so/images/experiments/github-contributions.svg"
               alt=""
             />

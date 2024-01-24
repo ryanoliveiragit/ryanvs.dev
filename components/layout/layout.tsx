@@ -5,5 +5,5 @@ type LayoutProps = {
 };
 
 export const Layout = ({ children }: LayoutProps) => {
-  return <section className="h-full flex justify-center mx-2">{children}</section>;
+  return <section className="w-full h-full flex justify-center px-4">{children}</section>;
 };

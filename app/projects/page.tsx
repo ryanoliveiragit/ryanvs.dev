@@ -6,7 +6,7 @@ export default function Projects() {
 
   return (
     <div
-      className="w-screen flex justify-center items-center flex-col max-w-[640px]"
+      className="w-screen flex justify-center items-center flex-col max-w-[640px] p-4"
       id="home"
       data-aos="zoom-in"
     >

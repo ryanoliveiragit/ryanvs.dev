@@ -30,7 +30,7 @@ export const Header = () => {
 
   return (
     <header
-      className={`h-[61px] flex justify-center items-center sticky top-0 z-30 mb-10 bg-gray-50 ${
+      className={`px-4 h-[61px] flex justify-center items-center sticky top-0 z-30 mb-10 bg-gray-50 ${
         scrolled ? "dark:bg-opacity-30" : "dark:bg-opacity-0"
       } dark:bg-[#111111] transition-[background-color] bg-opacity-0 ${
         scrolled ? "backdrop-blur-sm" : "backdrop-blur-none"
