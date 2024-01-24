@@ -4,7 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/header";
 import { Layout } from "@/components/layout";
 import { ThemeProvider } from "@/components/theme-provider";
-import { GoogleAnalytics } from '@next/third-parties/google'
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,12 +18,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const GAID = process.env.GaID || '';
   return (
     <html lang="pt-br">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <GoogleAnalytics gaId="G-M7QWT8CMKQ" />
+      <GoogleAnalytics gaId={GAID} />
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
