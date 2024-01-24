@@ -18,7 +18,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const GAID = process.env.GaID || '';
+  // const GAID = process.env.GaID || '';
   return (
     <html lang="pt-br">
       <head>
