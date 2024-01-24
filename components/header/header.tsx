@@ -60,14 +60,14 @@ export const Header = () => {
           </Link>
 
           <Link
-            href="/jornal"
+            href="/projects"
             className="dark:text-[#c7c7c7] hover:dark:text-[#fffefe] text-primary cursor-pointer "
           >
             <RiShoppingBag3Line size={20} strokeWidth={0.3} />
           </Link>
           <hr className="h-[1.5rem] w-[2px] bg-muted-foreground opacity-30" />
           <Link
-            href="/jornal"
+            href="/"
             className="dark:text-[#c7c7c7] hover:dark:text-[#fffefe] text-primary cursor-pointer "
           >
             <BiLogoInstagramAlt size={20} strokeWidth={0.3} />
