@@ -35,7 +35,7 @@ export default function Diario() {
           href="/diario/uistart"
         >
           <aside className="absolute [writing-mode:vertical-rl] h-full top-0 -left-12 md:-left-16 pr-11 text-center text-sm  dark:dark:text-[#737373] font-['Luxurious_Roman']">
-            January 09th
+          09 Janeiro
           </aside>
           <h2 className="text-xl font-semibold ">UI Start</h2>
           <p className="mt-2 text-sm text-gray-500 dark:text-[#737373]">
@@ -48,7 +48,7 @@ export default function Diario() {
           href="/diario/rocketseat-ignite"
         >
           <aside className="absolute [writing-mode:vertical-rl] h-full top-0 -left-12 md:-left-16 pr-11 text-center text-sm  dark:dark:text-[#737373] font-['Luxurious_Roman']">
-            May 02th
+            02 Maio
           </aside>
           <h2 className="text-xl font-semibold ">Rocketseat Ignite</h2>
           <p className="mt-2 text-sm text-gray-500 dark:text-[#737373]">
