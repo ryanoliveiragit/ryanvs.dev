@@ -25,6 +25,11 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <GoogleAnalytics gaId="G-M7QWT8CMKQ" />
+      <script
+        defer
+        data-domain="ryanvs.dev"
+        src="https://plausible.io/js/script.js"
+      ></script>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
