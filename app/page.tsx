@@ -43,24 +43,7 @@ export default function Home() {
             </span>
           </span>
         </p>
-        <p className="mt-4 text-gray-600 dark:text-gray-400">
-          Trabalhando atualmente no{" "}
-          <a
-            className="animate-text-shimmer bg-[linear-gradient(110deg,#0ea5e9,45%,#f5f5f5,55%,#0ea5e9)] bg-[length:250%_100%] dark:bg-[linear-gradient(110deg,#0ea5e9,45%,#171717,55%,#0ea5e9)] inline-block cursor-ne-resize bg-clip-text text-transparent transition-transform ease-in-out hover:scale-105"
-            href="https://www.jogajuntoinstituto.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Instituto JogaJunto
-          </a>
-          , anteriormente na{" "}
-          <a
-          href="https://r3transportes.com.br/"
-          target="_blank"
-          className="dark:text-[#f88f8f] text-[#f88f8f] inline-block cursor-ne-resize font-normal bg-clip-text text-transparent transition-transform ease-in-out hover:scale-105">
-            R3 Transportes.
-          </a>
-        </p>
+     
       </div>
     </section>
   );
