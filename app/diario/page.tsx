@@ -24,7 +24,7 @@ export default function Diario() {
     >
       <BlockTitle
         title="Explorando em 2024"
-        description="Minha trilha de aprendizado neste ano."
+        description="Minha trilha neste ano."
       />
 
       <div className="absolute -top-24 -left-8 h-[99vh] border-l-2 border-dotted border-divider "></div>

@@ -56,13 +56,13 @@ export const Header = () => {
             <span className="bottom-2 left-2 absolute rounded-full px-2 py-.5 font-bold bg-neutral-900/90 text-[10px]">!</span>
             <GoPencil size={20} />
           </Link>
-
+{/* 
           <Link
             href="/projects"
             className="dark:text-[#c7c7c7] hover:dark:text-[#fffefe] text-primary cursor-pointer "
           >
             <RiShoppingBag3Line size={20} />
-          </Link>
+          </Link> */}
           <hr className="h-[1.5rem] w-[2px] bg-muted-foreground opacity-30" />
           <Link
             href="https://www.instagram.com/ryanvs.dev/"
