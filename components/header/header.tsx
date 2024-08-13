@@ -55,7 +55,7 @@ export const Header = () => {
             href="/diario"
             className="dark:text-[#c7c7c7] hover:dark:text-[#fffefe] relative text-primary cursor-pointer "
           >
-            <span className="bottom-2 left-2 absolute rounded-full px-2 py-.5 font-bold bg-neutral-900/90 text-[10px]">!</span>
+            <span className="bottom-2 left-2 absolute text-secondary dark:text-white rounded-full px-2 py-.5 font-bold bg-neutral-900/90 text-[10px]">!</span>
             <GoPencil size={20} />
           </Link>
 
