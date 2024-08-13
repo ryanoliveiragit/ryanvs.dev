@@ -3,6 +3,8 @@ import { BlockTitle } from "@/components/blockTitle";
 import AOS from "aos";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
+import { IoIosArrowRoundForward } from "react-icons/io";
+
 export default function Home() {
   useEffect(() => {
     AOS.init({
@@ -20,7 +22,7 @@ export default function Home() {
     >
       <BlockTitle title="Ryan Oliveira" description="Frontend Developer" />
       <div data-aos="zoom-in">
-        <p className="text-gray-600 dark:text-gray-400">
+        <p className="text-gray-600 dark:text-gray-400 -mt-10">
           Em uma jornada para criar{" "}
           <span className="group relative top-[6px] inline-block cursor-text overflow-hidden">
             <span className="invisible">aplicativos de alta qualidade</span>
@@ -39,12 +41,18 @@ export default function Home() {
           <span className="group relative">
             <span className="absolute -inset-0 bg-gradient-to-r from-blue-500 to-purple-400 rounded-lg opacity-10 blur group-hover:opacity-40 group-hover:blur-md animate-tilt transition-all duration-300 ease-in-out"></span>
             <span className="relative bg-gradient-to-r from-blue-500 to-purple-400 bg-clip-text text-transparent">
-              usabilidade e design
+              usabilidade e design. <br />{" "}
             </span>
           </span>
         </p>
-     
       </div>
+      <a
+        href="/diario"
+         data-aos="zoom-in"
+        className="underline flex flex-row gap-2 items-center mt-10"
+      >
+        Conheça um pouco do meu trabalho <IoIosArrowRoundForward size={25} />
+      </a>
     </section>
   );
 }

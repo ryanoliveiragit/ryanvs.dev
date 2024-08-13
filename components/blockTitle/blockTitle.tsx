@@ -12,8 +12,8 @@ export const BlockTitle = ({ title, description }: BlockTitleType) => {
         </h1>
         <h2 className="text-muted-foreground">{description}</h2>
       </div>
-      <div className="scale-x-100">
-        <hr className="w-[5rem] m-[3rem]" />
+      <div className="scale-x-100 -mt-8">
+        <hr className="w-[5rem] m-[3rem] opacity-0" />
       </div>
     </>
   );
