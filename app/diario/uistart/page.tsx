@@ -35,7 +35,7 @@ export default function UiStart() {
                 alt="a"
                 height={200}
                 width={900}
-                src="https://cdn.discordapp.com/attachments/1179982136015589477/1198845771248849048/open-graph.png?ex=65c06321&is=65adee21&hm=3da787706229bd0a5b992a67f40bf5a3e552e6d733dcfbfe4958815a7e65039a&"
+                src="/assets/ui-start.png"
               />
             </div>
             <div className="flex flex-col gap-2 mt-4">
@@ -64,29 +64,7 @@ export default function UiStart() {
                 alt="a"
                 height={200}
                 width={900}
-                src="https://cdn.discordapp.com/attachments/1179982136015589477/1198843462280286300/Default.png?ex=65c060fa&is=65adebfa&hm=618ad9d87ea21332b9fee2d94e0329fe30f86bde9ecfa580f5061b55a5380190&"
-              />
-            </div>
-
-            <div className="flex flex-col gap-3 mt-10">
-              <h2 className="text-xl font-semibold ">Tela de logIn</h2>
-              <h3 className="text-md font-semibold ">⚡️ Simples e objetiva</h3>
-              <p className="dark:text-[#b8b8b8] text-sm">
-                projetada para oferecer uma experiência simples e intuitiva aos
-                usuários, proporcionando um acesso fácil e seguro. Com um design
-                limpo e minimalista, a interface busca facilitar a interação do
-                usuário, mantendo a atenção nos elementos essenciais. O layout é
-                organizado de forma lógica, com campos de entrada para e-mail e
-                senha claramente visíveis.
-              </p>
-            </div>
-
-            <div className="w-full h-full flex flex-col gap-2">
-              <Image
-                alt="a"
-                height={200}
-                width={900}
-                src="https://cdn.discordapp.com/attachments/1179982136015589477/1198842889128656946/Desktop_-_11.png?ex=65c06072&is=65adeb72&hm=b796d8176deddb30ffd93ac04170805db79f122a89498e8214d13bb60efe971e&"
+                src="/assets/dashboard.png"
               />
             </div>
           </div>

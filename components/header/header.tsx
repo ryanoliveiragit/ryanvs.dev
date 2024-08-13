@@ -18,11 +18,7 @@ export const Header = () => {
       const isScrolled = window.scrollY > 0;
       setScrolled(isScrolled);
     };
-
-    // Adiciona um ouvinte de evento de rolagem quando o componente é montado
     window.addEventListener("scroll", handleScroll);
-
-    // Remove o ouvinte de evento quando o componente é desmontado
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -55,8 +51,9 @@ export const Header = () => {
 
           <Link
             href="/diario"
-            className="dark:text-[#c7c7c7] hover:dark:text-[#fffefe] text-primary cursor-pointer "
+            className="dark:text-[#c7c7c7] hover:dark:text-[#fffefe] relative text-primary cursor-pointer "
           >
+            <span className="bottom-2 left-2 absolute rounded-full px-2 py-.5 font-bold bg-neutral-900/90 text-[10px]">!</span>
             <GoPencil size={20} />
           </Link>
 

@@ -29,6 +29,7 @@ export const ProjectMockup = ({
             </div>
 
             <div className="w-full h-full flex flex-col gap-2 items-start">
+                
                 <Image alt={altImage} height={400} width={900} src={`${image}`} />
                 <HoverCardDemo name={title} image={`${image}`} href={href}/>
             </div>

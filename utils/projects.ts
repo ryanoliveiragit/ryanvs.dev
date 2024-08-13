@@ -65,3 +65,32 @@ export const projects = [
       href: 'https://github.com/ryanoliveiragit/-rocketseat-cardswap'
     },
   ];
+
+
+  export const realProjects = [
+    {
+      altImage: 'Dashboard',
+      title: 'Dashboard',
+      description: 'Next.js, TypeScript, shadcn/radix e Tailwind CSS.',
+      introduction: 'Dentro desse projeto, fui responsável por organizar toda a arquitetura frontend, assim como as tarefas fora dela, como a estrutura do Git, reviews/pull requests, além do levantamento de requisitos e wireframes. Não consigo mostrar todas as telas, mas foram mais de 20 no total. Entre as funcionalidades desenvolvidas, estão o agendamento de visitas, detalhes e diferenciais de cada apartamento cadastrado, corretoras parceiras, visualização dinâmica de acordo com cargos, entre outras funcionalidades. Tudo é modular, permitindo que o cliente possa alterar praticamente tudo no próprio dashboard.',
+      image: '/assets/dashboard-civil2.jpg',
+      href: 'https://www.linkedin.com/feed/update/urn:li:activity:7224569049467256832/'
+
+    },
+    {
+      altImage: 'Aplicativo',
+      title: 'Aplicativo PWA',
+      description: 'Next.js, TypeScript, shadcn/radix e Tailwind CSS.',
+      introduction: 'Este aplicativo (PWA, ou Progressive Web App, que é um tipo de aplicação web que oferece uma experiência semelhante a um app nativo, com recursos como acesso offline e notificações push) foi desenvolvido para ser alimentado pelo dashboard. Com ele, o corretor pode visualizar empreendimentos disponíveis, apartamentos, fotos, arquivos, entre outras funcionalidades. Além disso, o corretor pode solicitar visitas, fazer propostas, e conta com um sistema de rankeamento que o estimula a realizar mais vendas.',
+      image: '/assets/appcivil.jpg',
+      href: 'https://www.linkedin.com/feed/update/urn:li:activity:7224569049467256832/'
+    },
+    {
+      altImage: 'Dashboard',
+      title: 'Dashboard',
+      description: 'Next.js, TypeScript, shadcn/radix e Tailwind CSS.',
+      introduction: 'Este projeto foi desenvolvido para otimizar o fluxo de inscrições de alunos, proporcionando visualização de gráficos em tempo real e controle total sobre todos os projetos e inscrições dos alunos cadastrados nos cursos. Além disso, ele também funciona como a plataforma geral da equipe, permitindo a gestão de diversos aspectos, desde o financeiro até o gerenciamento de voluntários e funcionários. Essa solução integrada oferece uma administração eficiente e centralizada para todas as áreas da organização.',
+      image: '/assets/dashboard-ijj.jpg',
+      href: '#'
+    },
+  ];
