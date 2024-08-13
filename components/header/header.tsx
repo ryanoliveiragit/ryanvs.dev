@@ -9,6 +9,8 @@ import { FaGithub } from "react-icons/fa6";
 import Link from "next/link";
 import { IoLogoInstagram } from "react-icons/io5";
 import { ModeToggle } from "../ui/toggle-mode";
+import { FaStar } from "react-icons/fa6";
+
 
 export const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -56,13 +58,14 @@ export const Header = () => {
             <span className="bottom-2 left-2 absolute rounded-full px-2 py-.5 font-bold bg-neutral-900/90 text-[10px]">!</span>
             <GoPencil size={20} />
           </Link>
-{/* 
+
           <Link
-            href="/projects"
+             href="https://bento.me/ryanvs"
+             target="_blank"
             className="dark:text-[#c7c7c7] hover:dark:text-[#fffefe] text-primary cursor-pointer "
           >
-            <RiShoppingBag3Line size={20} />
-          </Link> */}
+            <FaStar size={20} className="text-yellow-300" />
+          </Link>
           <hr className="h-[1.5rem] w-[2px] bg-muted-foreground opacity-30" />
           <Link
             href="https://www.instagram.com/ryanvs.dev/"
