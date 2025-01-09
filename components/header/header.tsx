@@ -66,6 +66,13 @@ export const Header = () => {
           >
             <FaStar size={20} className="text-yellow-300" />
           </Link>
+          <Link
+             href="https://docs.google.com/document/d/1GQBcF_3yZji_fcc52gmC2Vagonqh9yCREHpeQcSvy8s/edit?usp=sharing"
+             target="_blank"
+            className="dark:text-[#c7c7c7] underline hover:dark:text-[#fffefe] text-primary cursor-pointer "
+          >
+            Meu currículo.
+          </Link>
           <hr className="h-[1.5rem] w-[2px] bg-muted-foreground opacity-30" />
           <Link
             href="https://www.instagram.com/ryanvs.dev/"
