@@ -3,56 +3,122 @@ import { BlockTitle } from "@/components/blockTitle";
 import AOS from "aos";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
-import { IoIosArrowRoundForward } from "react-icons/io";
+import { ArrowRight, Github, ExternalLink, Mail } from "lucide-react";
 
 export default function Home() {
   useEffect(() => {
     AOS.init({
       once: true,
-      duration: 300,
+      duration: 600,
+      easing: 'ease-out-cubic'
     });
     return () => {
       AOS.refresh();
     };
   }, []);
+
   return (
     <section
-      className="w-full flex justify-center items-center flex-col max-w-[640px]"
+      className="w-full flex justify-center items-center flex-col max-w-2xl mx-auto px-6"
       id="home"
     >
-      <BlockTitle title="Ryan Oliveira" description="Frontend Developer" />
-      <div data-aos="zoom-in">
-        <p className="text-gray-600 dark:text-gray-400 -mt-10">
-          Em uma jornada para criar{" "}
-          <span className="group relative top-[6px] inline-block cursor-text overflow-hidden">
-            <span className="invisible">aplicativos de alta qualidade</span>
-            <span className="bg-gradient-to-r from-rose-500 via-pink-500 to-purple-500 text-transparent bg-clip-text absolute top-0 left-0 group-hover:-translate-y-full transition-transform duration-500 ease-in-out hover:duration-300">
-              aplicativos de alta qualidade
+      {/* Hero Section */}
+      <div className="text-center space-y-6 mb-16 mt-4">
+        <BlockTitle title="Ryan Oliveira" description="Frontend Developer" />
+        
+        <div data-aos="fade-up" data-aos-delay="200">
+          <p className="text-lg text-neutral-600 dark:text-neutral-300 leading-relaxed max-w-lg mx-auto">
+            Criando experiências digitais modernas com foco em{" "}
+            <span className="text-black dark:text-white font-medium">
+              performance
             </span>
-            <span className="bg-gradient-to-r from-rose-500 via-pink-500 to-purple-500 text-transparent bg-clip-text absolute top-0 left-0 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out hover:duration-300">
-              aplicativos de alta qualidade
-            </span>
-          </span>
-          , meu foco está na criação de{" "}
-          <span className="bg-gradient-to-r from-green-500 to-blue-600 bg-clip-text text-transparent dark:from-blue-400 dark:via-cyan-400 dark:to-green-500 after:bg-gradient-to-r relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-[130px] after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:duration-300 after:ease-in-out">
-            interfaces fluidas
-          </span>
-          , que combinam{" "}
-          <span className="group relative">
-            <span className="absolute -inset-0 bg-gradient-to-r from-blue-500 to-purple-400 rounded-lg opacity-10 blur group-hover:opacity-40 group-hover:blur-md animate-tilt transition-all duration-300 ease-in-out"></span>
-            <span className="relative bg-gradient-to-r from-blue-500 to-purple-400 bg-clip-text text-transparent">
-              usabilidade e design. <br />{" "}
-            </span>
-          </span>
-        </p>
+            ,{" "}
+            <span className="text-black dark:text-white font-medium">
+              usabilidade
+            </span>{" "}
+            e design limpo.
+          </p>
+        </div>
+
+        {/* Action Buttons */}
+        <div 
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+          data-aos="fade-up" 
+          data-aos-delay="400"
+        >
+          <a
+            href="/projects"
+            className="group inline-flex items-center gap-2 bg-black dark:bg-white text-white dark:text-black px-6 py-3 rounded-lg font-medium transition-all duration-200 hover:scale-105 hover:shadow-lg"
+          >
+            Ver Projetos
+            <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+          </a>
+          
+          <a
+            href="#contact"
+            className="group inline-flex items-center gap-2 border border-neutral-200 dark:border-neutral-700 px-6 py-3 rounded-lg font-medium transition-all duration-200 hover:border-neutral-300 dark:hover:border-neutral-600 hover:bg-neutral-50 dark:hover:bg-neutral-800"
+          >
+            <Mail size={16} />
+            Contato
+          </a>
+        </div>
       </div>
-      <a
-        href="/diario"
-         data-aos="zoom-in"
-        className="underline flex flex-row gap-2 items-center mt-10"
+
+   
+
+      {/* Featured Project Preview */}
+      <div 
+        className="w-full p-8 border border-neutral-200 dark:border-neutral-800 rounded-2xl hover:border-neutral-300 dark:hover:border-neutral-700 transition-all duration-300 hover:shadow-lg"
+        data-aos="fade-up" 
+        data-aos-delay="800"
       >
-        Conheça um pouco do meu trabalho <IoIosArrowRoundForward size={25} />
-      </a>
+        <div className="flex items-start justify-between mb-4">
+          <div>
+            <h3 className="text-xl font-semibold text-black dark:text-white mb-2">
+              Projeto em Destaque
+            </h3>
+            <p className="text-neutral-600 dark:text-neutral-400">
+              Aplicação web moderna construída com as melhores práticas
+            </p>
+          </div>
+          <div className="flex gap-3">
+            <a 
+              href="#" 
+              className="p-2 hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-lg transition-colors"
+              aria-label="Ver código no GitHub"
+            >
+              <Github size={20} />
+            </a>
+            <a 
+              href="#" 
+              className="p-2 hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-lg transition-colors"
+              aria-label="Ver projeto ao vivo"
+            >
+              <ExternalLink size={20} />
+            </a>
+          </div>
+        </div>
+        
+        <div className="flex flex-wrap gap-2 mb-4">
+          {['React', 'TypeScript', 'Next.js', 'Tailwind'].map((tech) => (
+            <span 
+              key={tech}
+              className="px-3 py-1 text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 rounded-full"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+        
+        <a
+          href="/projects"
+          className="group inline-flex items-center gap-2 text-black dark:text-white font-medium hover:gap-3 transition-all duration-200"
+        >
+          Ver todos os projetos
+          <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+        </a>
+      </div>
+
     </section>
   );
 }
