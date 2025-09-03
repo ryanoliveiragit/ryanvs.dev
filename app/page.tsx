@@ -39,29 +39,6 @@ export default function Home() {
             e design limpo.
           </p>
         </div>
-
-        {/* Action Buttons */}
-        <div 
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
-          data-aos="fade-up" 
-          data-aos-delay="400"
-        >
-          <a
-            href="/projects"
-            className="group inline-flex items-center gap-2 bg-black dark:bg-white text-white dark:text-black px-6 py-3 rounded-lg font-medium transition-all duration-200 hover:scale-105 hover:shadow-lg"
-          >
-            Ver Projetos
-            <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-          </a>
-          
-          <a
-            href="#contact"
-            className="group inline-flex items-center gap-2 border border-neutral-200 dark:border-neutral-700 px-6 py-3 rounded-lg font-medium transition-all duration-200 hover:border-neutral-300 dark:hover:border-neutral-600 hover:bg-neutral-50 dark:hover:bg-neutral-800"
-          >
-            <Mail size={16} />
-            Contato
-          </a>
-        </div>
       </div>
 
    
@@ -111,7 +88,7 @@ export default function Home() {
         </div>
         
         <a
-          href="/projects"
+          href="/diario"
           className="group inline-flex items-center gap-2 text-black dark:text-white font-medium hover:gap-3 transition-all duration-200"
         >
           Ver todos os projetos
